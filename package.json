@@ -1,6 +1,7 @@
 {
   "name": "apitest",
   "version": "1.0.0",
+  "type": "module",
   "description": "Criando uma nova api para testar aplicação",
   "main": "index.js",
   "scripts": {
