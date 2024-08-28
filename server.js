@@ -1,31 +1,9 @@
-import express, { json } from 'express'
+import express from "express";
 
-const app = express()
-app.use(express.json())
+const app = express();
 
-
-const usuarios= []
-
-app.post('/users', (req, res) => {
-
-  usuarios.push(req.body)
-  res.send('ok deu tudo certo por aqui')
-})
-
-app.get('/users', (req, res) => {
-  res.json(usuarios)
+app.get('/teste', (req, res) => {
+  res.send("testando esta rota agora!")
 })
 
 app.listen(3000)
-
-/*
-    Objetivos
-    
-
-    -Criar um usuário
-    -Listar todos os usuários
-    -Editar um usuário
-    -Deletar um usuário
-
-
- */
